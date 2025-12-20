@@ -1,3 +1,4 @@
+a) Worst fit
 #include<stdio.h>  
 #define max 25  
 void main()  
