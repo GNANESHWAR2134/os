@@ -3,7 +3,7 @@ a) FCFS
 #include<stdlib.h> 
 int main() 
 { 
-} 
+ 
 int RQ[100],i,n,TotalHeadMoment=0,initial; 
 printf("Enter the number of Requests\n"); 
 scanf("%d",&n); 
@@ -15,11 +15,13 @@ scanf("%d",&initial);
 
 for(i=0;i<n;i++) 
 { 
-} 
+
 TotalHeadMoment=TotalHeadMoment+abs(RQ[i]-initial); 
-initial=RQ[i]; 
+initial=RQ[i];
+} 
 printf("Total head moment is %d",TotalHeadMoment); 
 return 0;
+}
 OUTPUT 
 Enter the number of Request 
 8 
@@ -47,11 +49,11 @@ while(count!=n)
 int min=1000,d,index; 
 for(i=0;i<n;i++) 
 { 
-} 
+ 
 d=abs(RQ[i]-initial); 
 if(min>d) 
 { 
-} 
+ 
 min=d; 
 index=i; 
 TotalHeadMoment=TotalHeadMoment+min; 
